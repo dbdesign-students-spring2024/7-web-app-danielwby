@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block container %}
-<h2>Read</h2>
-<p>This page shows information pulled from a MongoDB database collection.
+<h2>Welcome to the warehouse backstage</h2>
+<p>The current bicycle inventory information is as follows:.
         
     {% for doc in docs %}
     <div>
@@ -10,7 +10,7 @@
         <p class="post">
             Posted by {{doc.name}} at {{ doc.created_at.strftime("%H:%M on %d %B %Y") }}
             <br/>
-            <a href="{{ url_for('edit',mongoid=doc._id)}}">Edit</a> | <a href="{{ url_for('delete',mongoid=doc._id)}}">Delete</a>
+            <a class="btn" href="{{ url_for('edit',mongoid=doc._id)}}">Edit</a> | <a class="btn" href="{{ url_for('delete',mongoid=doc._id)}}">Delete</a>
             <br/>
         </p>
         <p>

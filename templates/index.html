@@ -2,10 +2,10 @@
 
 {% block container %}
 <h2>Welcome!</h2>
-<p>Welcome to the Flask app. This is the home page. Here are a few links to example pages you might find interesting.
+<p>Please note that this system is mainly a bicycle inventory management system, which can let the warehouse staff know the current inventory of vehicles and maintain vehicle information to the warehouse.
     <ul>
-        <li><a href="{{ url_for('read')}}">a page that displays information pulled from a MongoDB database collection</a></li>
-        <li><a href="{{ url_for('create')}}">a page with a form you can submit to create a new record in a MongoDB collection</a></li>
+        <li><a href="{{ url_for('read')}}">This page mainly displays the vehicle information in the current warehouse</a></li>
+        <li><a href="{{ url_for('create')}}">This page allows administrators to add vehicle information to the warehouse</a></li>
     </ul>
 </p>
 {% endblock %}
