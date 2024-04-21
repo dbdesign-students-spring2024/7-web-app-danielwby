@@ -1,7 +1,10 @@
 .container {
-  border: 2px solid;
+  /* border: 2px solid; */
   width: 50%;
   margin: 0 auto;
+}
+header {
+  text-align: center; /* This aligns the text inside the header to the center */
 }
 
 header,
@@ -12,14 +15,39 @@ main {
 
 header,
 main {
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   margin-bottom: 5px;
 }
 
 p.post {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 footer {
   margin-bottom: 5px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
